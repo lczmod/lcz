@@ -1,0 +1,123 @@
+LCZ Mod License
+
+LCZ Mod v1.0 (Also referred to as "LCZ Mod") consists of software components,
+resource files and resource sources. In case you received these files packed
+into a Valve Source engine BSP file ("BSP file" onwards) and wish to access
+the source code & resource files, you can extract them from BSP file,
+with instructions available at:
+https://developer.valvesoftware.com/wiki/Bspzip
+
+You can obtain the latest version from git repository:
+https://github.com/lczmod/lcz
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+The basic premise of LCZ Mod license is that you can use any parts of it for
+any purpose, commercial or not, as long as you share the parts you've used
+under their original licenses and with original notices of authorship.
+
+Two main licenses used by parts of LCZ Mod are GPLv3 and CC BY-SA 4.0.
+
+More specific licensing information can be found below.
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+This license file must be redistributed along with any works that make use of
+unchanged or derivative form of LCZ Mod software components, resource files
+or resource sources, in one of the following manners:
+
+ - As a resource included into BSP file, placed in the inner path root
+   (that is, full license file path must be "/LICENSE-LCZ.txt").
+   
+   Resource packing script distro/lcz_pack.cmd will include license file
+   into BSP file in this manner by default.
+   
+ - As a separate file, in the root folder of package that contains the BSP
+   file which uses LCZ Mod.
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Contents and paths:
+
+The following paths are relative to Git repository root directory.
+
+/distro
+LCZ Mod distribution directory.
+Contains necessary files for creation of levels using LCZ Mod.
+
+/src
+Resource sources contained in several separate sub-directories.
+Unless a sub-directory contains a separate license file, its contents are
+licensed under Creative Commons Attribution-ShareAlike 4.0
+International License.
+
+If you've obtained LCZ Mod distribution directory (named "distro") without
+resource sources, the /distro prefix won't be present in following paths.
+
+Software components can be found under the following directories:
+/distro/res/csgo/scripts/vscripts/lcz_v1
+
+Resource files can be found under the following directories:
+/distro/res/csgo/materials/models/props_lcz_v1
+/distro/res/csgo/models/player/custom_player/lcz_v1
+/distro/res/csgo/models/props_lcz_v1
+/distro/res/csgo/sound/lcz_v1
+
+License text files for all licenses used in LCZ Mod can be found under the
+following directories:
+/license
+/distro/license
+
+When working with resources embedded in BSP file, remove the /distro/res/csgo
+prefix from internal paths. License files must appear in the
+internal path root (e.g. /LICENSE-LCZ.txt).
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Software components license:
+
+LCZ Mod v1.0 software components are free software: you can redistribute
+them and/or modify them under the terms of the GNU General Public License
+as published by the Free Software Foundation, either version 3 of the License,
+or (at your option) any later version.
+
+LCZ Mod v1.0 software components are distributed in the hope that they will be
+useful, but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with LCZ Mod v1.0.  If not, see <http://www.gnu.org/licenses/>.
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Resource files and resource sources license:
+
+LCZ Mod resource files and resource sources are licensed under a
+Creative Commons Attribution-ShareAlike 4.0 International License.
+
+You should have received a copy of the license along with this
+work. If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Other license information:
+
+OpenType font "Unique", licensed under SIL OFL 1.1,
+has been used during creation of some resources.
+SIL OFL 1.1 license text can be found in plain text file "OFL.txt".
+
+= = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = = =
+
+Other notes:
+
+Renoise 3 and farbrausch V2 Synthesizer System were used
+during creation of sound effects.
+Werkkzeug 4 has been used during creation of materials.
+
+For more information, see:
+http://renoise.com/
+https://github.com/farbrausch/fr_public/tree/master/v2
+http://www.pouet.net/prod.php?which=15073
+http://www.farb-rausch.de/prod.py?which=86
+https://github.com/farbrausch/fr_public/tree/master/altona_wz4

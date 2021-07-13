@@ -1,0 +1,11 @@
+VertexLitGeneric
+{
+	$color2 "[.75 .75 .75]"
+	$envmap env_cubemap
+	$envmapmask models/props_lcz_v1/metal01
+	$envmaptint "[.8 .8 .8]"
+	$envmapcontrast 0.34
+	$envmapsaturation 0.34
+	$alphatest 1
+	$nocull 1
+}

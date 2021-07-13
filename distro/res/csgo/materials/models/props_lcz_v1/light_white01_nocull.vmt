@@ -1,0 +1,7 @@
+UnlitGeneric
+{
+	$color2 "[1.0 1.0 1.0]"
+	$model 1
+	$nodecal 1
+	$nocull 1
+}

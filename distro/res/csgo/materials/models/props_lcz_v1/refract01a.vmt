@@ -1,0 +1,29 @@
+Refract
+{
+	Refract_dx90
+	{
+		$normalmap dev/water_normal
+	}
+	
+	Refract_dx80
+	{
+		$dudvmap dev/water_dudv
+	}
+	
+	$model 1
+	$alphatest 1
+	$refractamount 0
+	$bluramount 1
+	
+	Proxies
+	{
+		Sine
+		{
+			sineperiod	3
+			sinemin		0.05
+			sinemax		0.15
+			timeoffset	0
+			resultVar	$refractamount
+		}
+	}
+}

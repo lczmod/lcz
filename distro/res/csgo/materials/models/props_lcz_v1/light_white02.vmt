@@ -1,0 +1,6 @@
+UnlitGeneric
+{
+	$basetexture models/props_lcz_v1/light_white01
+	$model 1
+	$alpha 0.34
+}

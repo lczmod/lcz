@@ -1,0 +1,25 @@
+UnlitGeneric
+{
+	$color2 "[.6 .85 1]"
+	$model 1
+	$nocull 1
+	$nodecal 1
+	
+	$rampVal 0
+	
+	Proxies
+	{
+		LinearRamp
+		{
+			rate 2
+			initialValue .5
+			resultVar $rampVal
+		}
+		
+		Frac
+		{
+			srcVar1 $rampVal
+			resultVar $alpha
+		}
+	}
+}

@@ -1,0 +1,427 @@
+versioninfo
+{
+	"editorversion" "400"
+	"editorbuild" "7215"
+	"mapversion" "69"
+	"formatversion" "100"
+	"prefab" "0"
+}
+visgroups
+{
+}
+viewsettings
+{
+	"bSnapToGrid" "1"
+	"bShowGrid" "1"
+	"bShowLogicalGrid" "0"
+	"nGridSpacing" "8"
+	"bShow3DGrid" "0"
+}
+world
+{
+	"id" "1"
+	"mapversion" "69"
+	"classname" "worldspawn"
+	"detailmaterial" "detail/detailsprites"
+	"detailvbsp" "detail.vbsp"
+	"maxpropscreenwidth" "-1"
+	"skyname" "sky_dust"
+	solid
+	{
+		"id" "278"
+		side
+		{
+			"id" "1"
+			"plane" "(-48 16 80) (48 16 80) (48 -80 80)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "32"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "2"
+			"plane" "(-48 -80 -16) (48 -80 -16) (48 16 -16)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 -1 0 0] 1"
+			"rotation" "0"
+			"lightmapscale" "32"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "3"
+			"plane" "(-48 16 80) (-48 -80 80) (-48 -80 -16)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "32"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "4"
+			"plane" "(48 16 -16) (48 -80 -16) (48 -80 80)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[0 1 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "32"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "5"
+			"plane" "(48 16 80) (-48 16 80) (-48 16 -16)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "32"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "6"
+			"plane" "(48 -80 -16) (-48 -80 -16) (-48 -80 80)"
+			"material" "TOOLS/TOOLSSKIP"
+			"uaxis" "[1 0 0 0] 1"
+			"vaxis" "[0 0 -1 0] 1"
+			"rotation" "0"
+			"lightmapscale" "32"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "0 159 164"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+}
+entity
+{
+	"id" "606"
+	"classname" "game_round_end"
+	"targetname" "@lcz_game_round_end"
+	"origin" "0 0 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "569"
+	"classname" "logic_eventlistener"
+	"EventName" "player_spawn"
+	"IsEnabled" "1"
+	"TeamNum" "-1"
+	connections
+	{
+		"OnEventFired" "@lczRunScriptCodelczPlayerSpawn();0-1"
+	}
+	"origin" "0 -64 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "587"
+	"classname" "point_servercommand"
+	"targetname" "@sc"
+	"origin" "-32 -32 24"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "400"
+	"classname" "trigger_brush"
+	"origin" "32 -64 0"
+	"targetname" "game_playerdie"
+	connections
+	{
+		"OnUse" "@lczRunScriptCodelczPlayerDeath();0-1"
+	}
+	solid
+	{
+		"id" "397"
+		side
+		{
+			"id" "18"
+			"plane" "(24 -72 8) (24 -56 8) (40 -56 8)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 -32] 0.25"
+			"vaxis" "[0 -1 0 32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "32"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "17"
+			"plane" "(24 -56 -8) (24 -72 -8) (40 -72 -8)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 -32] 0.25"
+			"vaxis" "[0 -1 0 32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "32"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "16"
+			"plane" "(24 -72 -8) (24 -56 -8) (24 -56 8)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 1 0 -32] 0.25"
+			"vaxis" "[0 0 -1 -32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "32"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "15"
+			"plane" "(40 -56 -8) (40 -72 -8) (40 -72 8)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[0 1 0 -32] 0.25"
+			"vaxis" "[0 0 -1 -32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "32"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "14"
+			"plane" "(24 -56 -8) (40 -56 -8) (40 -56 8)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 -32] 0.25"
+			"vaxis" "[0 0 -1 -32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "32"
+			"smoothing_groups" "0"
+		}
+		side
+		{
+			"id" "13"
+			"plane" "(40 -72 -8) (24 -72 -8) (24 -72 8)"
+			"material" "TOOLS/TOOLSTRIGGER"
+			"uaxis" "[1 0 0 -32] 0.25"
+			"vaxis" "[0 0 -1 -32] 0.25"
+			"rotation" "0"
+			"lightmapscale" "32"
+			"smoothing_groups" "0"
+		}
+		editor
+		{
+			"color" "220 220 220"
+			"visgroupshown" "1"
+			"visgroupautoshown" "1"
+		}
+	}
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "316"
+	"classname" "game_score"
+	"points" "1"
+	"spawnflags" "1"
+	"targetname" "@lcz_game_score"
+	"origin" "32 0 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "281"
+	"classname" "logic_auto"
+	"spawnflags" "1"
+	"origin" "-32 -32 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "230"
+	"classname" "func_instance_parms"
+	"parm1" "$default_dmg_filter target_name_or_class @lcz_fall_damage_filter"
+	"origin" "-32 0 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "175"
+	"classname" "logic_eventlistener"
+	"EventName" "round_start"
+	"IsEnabled" "1"
+	"TeamNum" "-1"
+	connections
+	{
+		"OnEventFired" "@lczRunScriptCodelczEventRoundStart();0-1"
+	}
+	"origin" "0 -64 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "163"
+	"classname" "filter_damage_type"
+	"damagetype" "32"
+	"Negated" "1"
+	"targetname" "@lcz_fall_damage_filter"
+	"origin" "32 -32 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 2000]"
+	}
+}
+entity
+{
+	"id" "151"
+	"classname" "player_speedmod"
+	"flags" "0"
+	"targetname" "@lcz_speed_mod"
+	"origin" "32 -32 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "58"
+	"classname" "logic_eventlistener"
+	"EventName" "cs_pre_restart"
+	"IsEnabled" "1"
+	"TeamNum" "-1"
+	connections
+	{
+		"OnEventFired" "@lczRunScriptCodelczEventCsPreRestart();0-1"
+	}
+	"origin" "32 -64 32"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "64"
+	"classname" "logic_eventlistener"
+	"EventName" "player_disconnect"
+	"IsEnabled" "1"
+	"TeamNum" "-1"
+	connections
+	{
+		"OnEventFired" "@lczRunScriptCodelczEventPlayerDisconnect();0-1"
+	}
+	"origin" "-32 -64 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 500]"
+	}
+}
+entity
+{
+	"id" "4"
+	"classname" "game_player_equip"
+	"spawnflags" "2"
+	"weapon_fiveseven" "100"
+	"weapon_knife" "1"
+	"origin" "32 0 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+entity
+{
+	"id" "2"
+	"classname" "logic_script"
+	"Group00" "@lcz_speed_mod"
+	"Group01" "@lcz_fall_damage_filter"
+	"Group02" "@lcz_game_score"
+	"Group03" "@sc"
+	"Group04" "@lcz_game_round_end"
+	"targetname" "@lcz"
+	"thinkfunction" "think"
+	"vscripts" "lcz_v1/lcz.nut"
+	"origin" "0 0 0"
+	editor
+	{
+		"color" "220 30 220"
+		"visgroupshown" "1"
+		"visgroupautoshown" "1"
+		"logicalpos" "[0 0]"
+	}
+}
+cameras
+{
+	"activecamera" "-1"
+}
+cordons
+{
+	"active" "0"
+}
